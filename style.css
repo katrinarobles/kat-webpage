@@ -1,0 +1,141 @@
+body {
+  background-color: #D7C0AE;
+}
+
+.main-container {
+  margin-left: 10%;
+}
+
+.ellipse-container {
+  display: flex;
+}
+.description-ellipse {
+  background-color: #3A2E3C;
+  width: 35%;
+  position: absolute;
+  top: 24%;
+  left: 15%;
+  text-align: center;
+  color: #F2ECE1;
+  padding: 1%;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.description1 {
+
+}
+
+.description2 {
+  display: flex;
+  margin-top: 5%;
+}
+.empty-box {
+  padding-right: 35%;
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+.blah-blah {
+  padding: 5px;
+}
+
+.description3 {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+.ff {
+  width: 10%;
+}
+
+.avatar-ellipse {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+#ellipse-text {
+  background-color: #321A36;
+  border-radius: 100%;
+  padding: 2px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 800;
+}
+#ellipse-text span {
+  position: absolute;
+  transform-origin: top left;
+  color: #F2ECE1;
+}
+.avatar {
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  object-fit: cover;
+  width: 86%;
+  border-radius: 50%;
+  transform: rotate(6deg);
+}
+
+.branch-div {
+  opacity: 70%;
+  position: absolute;
+  top: 33%;
+  left: -19%;
+}
+
+.branch {
+  transform: rotate(15deg);
+}
+
+div .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+div svg {
+  width: 2%;
+  height: auto;
+  margin: 0 2rem;
+  cursor: pointer;
+  overflow: visible;
+}
+div svg polygon, div svg path {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #F2ECE1;
+}
+div svg:hover polygon, div svg:hover path {
+  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #F2ECE1;
+}
+div svg:hover .arrow {
+  animation: arrow-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+div svg:hover .arrow-fixed {
+  animation: arrow-fixed-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+@keyframes arrow-anim {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(-0.1rem);
+  }
+  100% {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+}
+@keyframes arrow-fixed-anim {
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
