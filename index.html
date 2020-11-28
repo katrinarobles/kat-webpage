@@ -3,24 +3,48 @@
   <head>
     <title>Katrina Amor Robles - Full Stack Developer</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script class="rotate">
+  var looper;
+  var degrees = 0;
+  function rotateAnimation(el,speed){
+    var elem = document.getElementById(el);
+    elem.style.transform = "rotate("+degrees+"deg)";
+    looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+    degrees++;
+    if(degrees > 359){
+      clearTimeout(looper);
+    }
+  }
+  </script>
   </head>
 
+
   <body>
+    <div class="section">
+      <video autoplay loop muted>
+        <source src="assets/images/joshuatree.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <nav class="navbar">
+      <span><i class="fas fa-bars"></i></span>
+    </nav>
     <div class="main-container">
       <div class="ellipse-container">
-
         <div class="description-ellipse">
           <div class="description1">
-            Kat was raised in southern California where she grew up with deserts,
-            mountains and the Pacific ocean.
+            <h2>Full Stack Developer </h2>
           </div>
           <div class="description2">
             <div class="empty-box">
             </div>
             <div class="blah-blah">
+              Kat was raised in southern California where she grew up with deserts,
+              mountains and the Pacific ocean.
               She has lived in 22 + countries. Her art
               is inspired by her experiences and the elements of her surrounding.
               It can range from neutrality to eclectic. She loves what she does
@@ -28,34 +52,73 @@
             </div>
           </div>
           <div class="description3">
-            <img src="images/ff.png" class="ff">  <img src="images/ff.png" class="ff">  <img src="images/ff.png" class="ff">
+            <a href="https://github.com/katrinarobles" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+            <a href="linkedin.com/in/katrina-amor-robles" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+            <a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry"><i class="fas fa-2x fa-envelope"></i></a>
+            <a href="http://www.facebook.com/OntheMatBz" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+             <a href="http://www.instagram.com/a_kat_onthemat" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
           </div>
         </div>
-      </div>
         <div class="avatar-ellipse">
           <div id="ellipse-text">°Katrina Amor Robles</div>
-          <img src="images/flowerpower.png" class="avatar">
+          <script>rotateAnimation("ellipse-text",30);</script>
+          <div class="me">
+            <img src="assets/images/flowerpower.png" class="avatar">
+          </div>
           <div class="branch-div">
-            <img src="images/branch.png" class="branch">
+            <img src="assets/images/branch.png" class="branch">
           </div>
         </div>
+      </div> <!--end div for ellipse-container -->
+    </div> <!--end div for main-container -->
 
-
-
+    <div class="second-container">
+      <div class="skills-container">
+        <div class="title-skills">
+          S
+          <br>K
+          <br>I
+          <br>L
+          <br>L
+          <br>S
+        </div>
+        <div class="wrapper">
+          <svg viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+              <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+              <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="skills-box">
+          <div id="pewpew" class="flexy-container">
+            <img src="assets/images/mouse.png" class="mouse-scroll" id="customPointer" width="30" style="position:absolute;" />
+            <div class="skills">
+              <p><i class="far fa-dot-circle"></i> Ruby on Rails</p>
+              <p><i class="far fa-dot-circle"></i> Javascript</p>
+            </div>
+            <div class="skills">
+              <p><i class="far fa-dot-circle"></i> HTML</p>
+              <p><i class="far fa-dot-circle"></i> CSS</p>
+              <p><i class="far fa-dot-circle"></i> Bootstrap</p>
+            </div>
+            <div class="skills">
+              <p><i class="far fa-dot-circle"></i> Jquery</p>
+              <p><i class="far fa-dot-circle"></i> Git</p>
+              <p><i class="far fa-dot-circle"></i> GitHub</p>
+              <p><i class="far fa-dot-circle"></i> Heroku</p>
+              <p><i class="far fa-dot-circle"></i> Photoshop</p>
+            </div>
+        </div>
       </div>
     </div>
-
-
-    <div class="wrapper">
-      <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g>
-          <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
-          <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
-          <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
-        </g>
-      </svg>
+    <div class="footer">
+      <p>Video Creds: <a href="https://vimeo.com/101617534" target="_blank" class="mark">Mark 'Indy' Kochte</a></p>
     </div>
 
-    <script type="text/javascript" src="./circular-text.js"></script>
+    <script type="text/javascript" src="assets/javascript/circularText.js"></script>
+    <script type="text/javascript" src="assets/javascript/appear.js"></script>
+    <script type="text/javascript" src="assets/javascript/mouseCursor.js"></script>
   </body>
   </html>
