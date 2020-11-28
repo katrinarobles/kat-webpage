@@ -1,6 +1,7 @@
 body {
   background-color: transparent;
   font-family: 'Abhaya Libre', serif;
+  color: #F2ECE1;
 }
 a {
   text-decoration: none;
@@ -35,12 +36,17 @@ z-index: -500;
   padding: 10px;
   margin-bottom: 100px;
   text-align: right;
-  color:#F2ECE1 ;
+}
+
+.split-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-container {
   margin-bottom: 130px;
   margin-left: 30px;
+  width:50%;
 }
 
 .ellipse-container {
@@ -132,6 +138,17 @@ z-index: -500;
   width: 132px;
 }
 
+
+.main-container-2 {
+}
+
+.main-container-2 .hover-in{
+  transition: .3s ease-out;
+}
+.main-container-2 .hover-out{
+  transition: .3s ease-in;
+}
+
 .skills-container {
   display: flex;
 }
@@ -141,10 +158,8 @@ z-index: -500;
   animation-fill-mode: forwards;
   visibility: hidden;
   width: 350px;
-  color: #F2ECE1;
 }
 .title-skills {
-  color: white;
   text-align: center;
   margin-left: 100px;
   margin-right: 10px;

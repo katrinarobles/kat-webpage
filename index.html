@@ -33,6 +33,9 @@
     <nav class="navbar">
       <span><i class="fas fa-bars"></i></span>
     </nav>
+
+    <div class="split-container">
+
     <div class="main-container">
       <div class="ellipse-container">
         <div class="description-ellipse">
@@ -71,6 +74,20 @@
         </div>
       </div> <!--end div for ellipse-container -->
     </div> <!--end div for main-container -->
+
+    <div class="main-container-2">
+      <div class="project">
+        <div class="project__card">
+          <strong>Plana</strong>
+        </div>
+      </div>
+    </div> <!--end div for main-container-2-->
+    <script>
+      $(".project").hover3d({
+      selector: ".project__card"
+      });
+    </script>
+  </div> <!--end div for split-container -->
 
     <div class="second-container">
       <div class="skills-container">
@@ -117,6 +134,8 @@
       <p>Video Creds: <a href="https://vimeo.com/101617534" target="_blank" class="mark">Mark 'Indy' Kochte</a></p>
     </div>
 
+    <script src="jquery.min.js"></script>
+    <script src="jquery.hover3d.min.js"></script>
     <script type="text/javascript" src="assets/javascript/circularText.js"></script>
     <script type="text/javascript" src="assets/javascript/appear.js"></script>
     <script type="text/javascript" src="assets/javascript/mouseCursor.js"></script>
