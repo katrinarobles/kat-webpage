@@ -58,6 +58,7 @@ z-index: -500;
   background-color: #3A2E3C;
   opacity: 0.8;
   width: 380px;
+  height: 270px;
   position: absolute;
   left: 128px;
   border-radius: 3%;
@@ -106,8 +107,8 @@ z-index: -500;
 
 }
 #ellipse-text {
-  background-color: #321A36;
-  opacity: 0.8;
+  background-color: #ab9376;
+  opacity: 0.6;
   border-radius: 100%;
   padding: 2px;
   font-family: 'Abhaya Libre', serif;
@@ -116,7 +117,7 @@ z-index: -500;
 #ellipse-text span {
   position: absolute;
   transform-origin: top left;
-  color: #F2ECE1;
+  color: white;
 }
 .avatar {
   object-fit: cover;
@@ -142,13 +143,50 @@ z-index: -500;
 .main-container-2 {
 }
 
-.main-container-2 .hover-in{
+.project {
+  pointer-events: none;
+  transform: translateZ(0);
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  position: relative;
+  background-image: url("assets/images/forest-bg.jpg");
+}
+
+  .project:after{
+  content:" ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left:0;
+  bottom:-50px;
+  box-shadow: 0 30px 20px rgba(0,0,0,.3);
+
+  }
+
+.project-card .hover-in{
   transition: .3s ease-out;
 }
-.main-container-2 .hover-out{
+.project-card .hover-out{
   transition: .3s ease-in;
 }
 
+.project-card {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+/*  margin: auto;
+  text-align:center;
+  transform-style: preserve-3d;*/
+}
 .skills-container {
   display: flex;
 }
