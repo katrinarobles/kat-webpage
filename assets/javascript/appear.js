@@ -2,13 +2,25 @@
 //     document.querySelector(".skills-box").style.display = "block";
 // });
 
-function myFunction() {
-  var x = document.querySelector(".skills-box");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+function appear(event) {
+var skills = document.querySelector(".skills-box");
+  if (skills.style.display === "block") {
+    skills.style.display = "none";
   } else {
-    x.style.display = "block";
+    skills.style.display = "block";
   }
 }
+// var skills = document.querySelector(".skills-box");
 
-document.querySelector(".wrapper").addEventListener("click", myFunction);
+
+document.querySelector(".wrapper").addEventListener("click", appear);
+
+function wow(event) {
+var card = document.querySelector(".project");
+  if (card.style.display === "block") {
+    card.style.display = "none";
+  } else {
+    card.style.display = "block";
+  }
+}
+document.querySelector(".main-container-2").addEventListener("click", wow);

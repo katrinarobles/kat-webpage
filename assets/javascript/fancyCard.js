@@ -1,12 +1,4 @@
 $(".project").hover3d({
   selector: ".project__card",
-  shine: true,
+  shine: false,
 });
-
-// $('a.project__image').live('click',function() {
-//   $(".project").hover3d({
-//   selector: ".project__card",
-//   shine: true,
-//   });
-
-// });
