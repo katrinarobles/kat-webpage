@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -42,7 +43,7 @@
       <div class="ellipse-container">
         <div class="description-ellipse">
           <div class="description1">
-            <h2>Full Stack Developer </h2>
+            <p>Full Stack Web Developer </p>
           </div>
           <div class="description2">
             <div class="empty-box">
@@ -50,21 +51,23 @@
             <div class="blah-blah">
               Kat was raised in southern California where she grew up with deserts,
               mountains and the Pacific ocean.
-              She has lived in 22 + countries. Her art
+              She has lived in 22 + countries. Currently climbing and eating lots of pizza in Italy. Her art
               is inspired by her experiences and the elements of her surrounding.
               It can range from neutrality to eclectic.
             </div>
           </div>
           <div class="description3">
-            <a href="https://github.com/katrinarobles" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-            <a href="linkedin.com/in/katrina-amor-robles" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-            <a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry"><i class="fas fa-2x fa-envelope"></i></a>
-            <a href="http://www.facebook.com/OntheMatBz" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
-             <a href="http://www.instagram.com/a_kat_onthemat" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+            <a href="https://github.com/katrinarobles" target="_blank" class="hover-this"><i class="fab fa-2x fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/katrina-amor-robles-3b45891ba/" target="_blank" class="hover-this"><i class="fab fa-2x fa-linkedin"></i></a>
+            <a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry" class="hover-this"><i class="fas fa-2x fa-envelope"></i></a>
+            <a href="http://www.facebook.com/OntheMatBz" target="_blank" class="hover-this"><i class="fab fa-2x fa-facebook"></i></a>
+            <a href="http://www.instagram.com/a_kat_onthemat" target="_blank" class="hover-this"><i class="fab fa-2x fa-instagram"></i></a>
+            <p class="hover-this" style="margin: 2px; font-size: 0.5em; font-family:'Poppins';"> <i class="fas fa-phone"></i>+39 3773436871</p>
+            <small><a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry" class="hover-this">Contact me for more projects</small></a>
           </div>
         </div>
         <div class="avatar-ellipse">
-          <div id="ellipse-text">°Katrina Amor Robles</div>
+          <div id="ellipse-text">°Katrina Amor Robles°</div>
           <script>rotateAnimation("ellipse-text",30);</script>
           <div class="me">
             <img src="assets/images/flowerpower.png" class="avatar">
@@ -75,9 +78,16 @@
         </div>
       </div> <!--end div for ellipse-container -->
     </div> <!--end div for main-container -->
-
+    <div class="nav-wrapper">
+            <div class="navvs">
+                  <div class="hover-this"><p class="p-stain">Projects</p></div>
+                  <div class="cursor"></div>
+            </div>
+      </div>
     <div class="main-container-2">
-     <p class="p-thang">Projects</p>
+
+      <div class="all-projects">
+
         <div class="project">
           <div class="project__card">
             <a href="https://www.chooseplana.com" target="_blank" class="project__image"><img src="assets/images/forest-bg.jpg" width=500 height=350 alt="plana"></a>
@@ -88,7 +98,27 @@
             </div>
           </div>
         </div>
+        <div class="project">
+          <div class="project__card">
+            <a href="https://bold-like-a-pro.herokuapp.com/" target="_blank" class="project__image"><img src="assets/images/bold.jpg" width=500 height=350 alt="bold"></a>
+            <div class="project__detail">
+              <h2 class="project__title" style="font-family: 'Yellowtail', cursive; color: white;">Bold</h2>
+              <p class="project__category">Job Description:</p>
+              <small class="project__category">Backend & Frontend Developer</small>
+            </div>
+          </div>
       </div>
+      <div class="project">
+          <div class="project__card">
+            <a href="https://katrinaamorrobles.wordpress.com/gallery/" target="_blank" class="project__image"><img src="assets/images/ashleyprouty.jpg" width=500 height=350 alt="AP"></a>
+            <div class="project__detail">
+              <h2 class="project__title" style="color: white;">Photography</h2>
+              <p class="project__category">Job Description:</p>
+              <small class="project__category">Lifestyle Photographer</small>
+            </div>
+          </div>
+      </div>
+    </div>
     </div> <!--end div for main-container-2-->
   </div> <!--end div for split-container -->
 
@@ -120,6 +150,7 @@
             <div class="skills">
               <p><i class="far fa-dot-circle"></i> Ruby on Rails</p>
               <p><i class="far fa-dot-circle"></i> Javascript</p>
+              <p><i class="far fa-dot-circle"></i> SQL</p>
             </div>
             <div class="skills">
               <p><i class="far fa-dot-circle"></i> HTML</p>
@@ -141,6 +172,7 @@
       <p>Video Creds: <a href="https://vimeo.com/101617534" target="_blank" class="mark">Mark 'Indy' Kochte</a></p>
     </div>
     <script type="text/javascript" src="assets/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/bubbleHover.js"></script>
     <script type="text/javascript" src="assets/javascript/jquery.hover3d.min.js"></script>
     <script type="text/javascript" src="assets/javascript/fancyCard.js"></script>
     <script type="text/javascript" src="assets/javascript/circularText.js"></script>

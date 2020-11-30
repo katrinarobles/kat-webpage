@@ -2,6 +2,8 @@ body {
   background-color: transparent;
   font-family: 'Abhaya Libre', serif;
   color: #F2ECE1;
+  cursor: none;
+/*  padding: 50px;*/
 }
 a {
   text-decoration: none;
@@ -32,10 +34,11 @@ z-index: -500;
   background-color: transparent;
   transition: 0.5s background-color ease;
   border-bottom: 1px solid;
-  border-color: #F2ECE1;
+/*  border-color: #F2ECE1;*/
   padding: 10px;
   margin-bottom: 100px;
   text-align: right;
+  color: transparent;
 }
 
 .split-container {
@@ -58,8 +61,8 @@ z-index: -500;
 .description-ellipse {
   background-color: #3A2E3C;
   opacity: 0.8;
-  width: 60%;
-  height: 270px;
+  width: 70%;
+  height: 300px;
   position: absolute;
   left: 128px;
   border-radius: 3%;
@@ -72,8 +75,10 @@ z-index: -500;
   overflow: scroll;
 }
 
-.description1 {
-
+.description1 p {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 5px;
 }
 
 .description2 {
@@ -91,12 +96,14 @@ z-index: -500;
 
 .description3 {
   text-align: center;
-  margin-top: 4%;
+  margin-top: 3%;
 }
-
+.description3 i {
+  margin: 2px;
+}
 .description3 i:hover {
-  font-size: 3em;
   opacity: 60%;
+  font-size: 3em;
   cursor: pointer;
 }
 
@@ -145,36 +152,87 @@ z-index: -500;
 }
 
 
+
+.nav-wrapper {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    margin: 0 auto;
+    left: 350px;
+}
+
+.navvs {
+      width: 100%;
+      text-align: center;
+
+}
+
+.hover-this {
+      transition: all 0.3s ease;
+}
+
+.p-stain {
+      display: inline-block;
+      font-weight: 300;
+      color: white;
+      opacity: 0.9;
+      font-size: 40px;
+      text-transform: uppercase;
+      pointer-events: none;
+      transition: transform 0.1s linear;
+}
+
+.cursor {
+      pointer-events: none;
+      position: fixed;
+      padding: 0.3rem;
+      background-color: #fff;
+/*      color: white;*/
+      opacity: 0.7;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+      transform: translate(-50%, -50%) scale(8);
+}
+
+@media(min-width: 900px) {
+      .navvs {
+            display: flex;
+            justify-content: space-around;
+      }
+}
+
+@media(max-width: 900px) {
+      .navvs {
+            top: 30%;
+      }
+
+      .hover-this {
+            width: 100%;
+            padding: 10px 0;
+            display: inline-block;
+      }
+}
+
+
 .main-container-2 {
   position: relative;
-  margin-top: -80px;
   width: 100%;
   margin-left: 10%;
   cursor: pointer;
+  overflow: scroll;
 }
 
-.p-thang {
-  color: #F2ECE1;
-  font-size: 5em;
-  margin: 0;
-  opacity: 0.8;
-}
-
-/*.main-container-2:after {
-  content: "Projects";
-  position: absolute;
-  top: -30px;
-  left: 0;
-  z-index: -1;
-  font-size: 6em;
-  text-align: center;
-}
-*/
-
-
-.project-cards-container {
+.all-projects {
   display: flex;
+  justify-content: space-between;
+  width: 1150px;
 }
+
 
 .project {
   width: 100%;
@@ -183,6 +241,7 @@ z-index: -500;
 /*  margin-right: 5%;*/
   border-radius: 10px;
   display: none;
+  margin-right: 2%;
 }
 
 .project__image {

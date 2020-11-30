@@ -16,11 +16,13 @@ var skills = document.querySelector(".skills-box");
 document.querySelector(".wrapper").addEventListener("click", appear);
 
 function wow(event) {
-var card = document.querySelector(".project");
-  if (card.style.display === "block") {
-    card.style.display = "none";
-  } else {
-    card.style.display = "block";
-  }
+var cards = document.querySelectorAll(".project");
+  cards.forEach((card) => {
+    if (card.style.display === "block") {
+      card.style.display = "none";
+    } else {
+      card.style.display = "block";
+    }
+  })
 }
-document.querySelector(".main-container-2").addEventListener("click", wow);
+document.querySelector(".navvs").addEventListener("click", wow);
