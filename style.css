@@ -50,15 +50,6 @@ background-size: 100%;
     margin: 10% auto;
 }
 */
-@media (max-width: 576px) {
-  .biggest-container-ever {
-    width: 300%;
-  }
-   #videoBG {
-        width:100%;
-        height: 100vh;
-    }
-}
 
 
 .navbar {
@@ -244,10 +235,6 @@ background-size: 100%;
 }
 
 @media(max-width: 576px) {
-      .nav-wrapper {
-            top: 5%;
-          left: 183%;
-      }
 
       .hover-this {
             width: 100%;
@@ -280,7 +267,7 @@ background-size: 100%;
 
 
 .project {
-/*  width: 80%;*/
+  width: 85%;
 /*  float: left;*/
 /*  margin-right: 5%;*/
   border-radius: 10px;
@@ -380,7 +367,7 @@ background-size: 100%;
 
 .project__title {
   margin: 0 0 10px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   transition: .4s ease;
   -webkit-transform: translateY(40px) scale(0);
@@ -405,27 +392,6 @@ background-size: 100%;
   font-size: 0.5em;
 }
 
-@media(max-width: 576px) {
-      .main-container-2 {
-        margin-left: 10%;
-      }
-      .all-projects {
-        width: 300%;
-      }
-      .description-ellipse {
-      height: 350px;
-      position: absolute;
-      left: 99px;
-      border-radius: 3%;
-      text-align: center;
-      color: #F2ECE1;
-      padding-top: 10px;
-      padding-left: 37px;
-      padding-right: 24px;
-      padding-bottom: 20px;
-      overflow: scroll;
-      }
-}
 @media (max-aspect-ratio: 16/9) {
     .all-projects {
     display: block;
@@ -539,6 +505,53 @@ div svg:hover .arrow-fixed {
   }
 }
 
+@media (max-width: 576px) {
+   #videoBG {
+        width:auto;
+        height: 100%;
+    }
+    #container1{
+    height: 85%;
+  }
+  .split-container {
+    display: block;
+  }
+  .ellipse-container {
+    display: block;
+    position: relative;
+    align-items: center;
+  }
+  .second-container {
+    margin-top: 140%;
+  }
+  .nav-wrapper {
+    left: 0;
+    position: relative;
+  }
+  .title-skills {
+    margin-left: 0;
+  }
+  .skills-box {
+    width: 100%;
+  }
+  .description-ellipse {
+    height: 350px;
+    position: relative;
+    margin: 5%;
+    border-radius: 3%;
+    text-align: center;
+    color: #F2ECE1;
+    padding-top: 10px;
+    padding-left: 37px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    overflow: scroll;
+    left: 0;
+    }
+    .empty-box {
+    padding-right: 0;
+}
+}
 /*.footer {
   text-align: center;
   font-size: 0.8em;
@@ -546,4 +559,4 @@ div svg:hover .arrow-fixed {
   bottom: 0;
   margin: 0 auto;
   width: 100%;
-}*/
+}
