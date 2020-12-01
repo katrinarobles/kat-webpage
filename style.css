@@ -1,5 +1,5 @@
 body {
-  background-color: transparent;
+  background-color: black;
   font-family: 'Abhaya Libre', serif;
   color: #F2ECE1;
   cursor: none;
@@ -16,7 +16,7 @@ a:hover {
   opacity: 0.6;
 }
 
-.section {
+#videoBG{
 width: 100%;
 height: 100vh;
 object-fit: cover;
@@ -27,9 +27,38 @@ bottom: 0;
 left: 0;
 overflow: hidden;
 z-index: -500;
+background-size: 100%;
 
 }
 
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: 100vh;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width:auto;
+        height: 100%;
+    }
+}
+
+
+.biggest-container-ever {
+    margin: 10% auto;
+}
+
+@media (max-width: 576px) {
+  .biggest-container-ever {
+    width: 300%;
+  }
+   #videoBG {
+        width:100%;
+        height: 100vh;
+    }
+}
 .navbar {
   background-color: transparent;
   transition: 0.5s background-color ease;
@@ -157,9 +186,9 @@ z-index: -500;
     width: 100%;
     background: transparent;
     position: absolute;
-    top: 10px;
+    top: 15%;
     margin: 0 auto;
-    left: 350px;
+    left: 30%;
 }
 
 .navvs {
@@ -188,7 +217,6 @@ z-index: -500;
       position: fixed;
       padding: 0.3rem;
       background-color: #fff;
-/*      color: white;*/
       opacity: 0.7;
       border-radius: 50%;
       mix-blend-mode: difference;
@@ -206,9 +234,10 @@ z-index: -500;
       }
 }
 
-@media(max-width: 900px) {
-      .navvs {
-            top: 30%;
+@media(max-width: 576px) {
+      .nav-wrapper {
+            top: 1%;
+            left: 183%;
       }
 
       .hover-this {
@@ -222,7 +251,8 @@ z-index: -500;
 .main-container-2 {
   position: relative;
   width: 100%;
-  margin-left: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
   cursor: pointer;
   overflow: scroll;
 }
@@ -230,7 +260,7 @@ z-index: -500;
 .all-projects {
   display: flex;
   justify-content: space-between;
-  width: 1150px;
+  width: 190%;
 }
 
 
@@ -361,6 +391,14 @@ z-index: -500;
   font-size: 0.5em;
 }
 
+@media(max-width: 576px) {
+      .main-container-2 {
+        margin-left: 10%;
+      }
+      .all-projects {
+        width: 300%;
+      }
+}
 
 .skills-container {
   display: flex;
@@ -458,4 +496,8 @@ div svg:hover .arrow-fixed {
 .footer {
   text-align: center;
   font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
 }

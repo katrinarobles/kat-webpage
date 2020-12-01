@@ -18,7 +18,7 @@
     elem.style.transform = "rotate("+degrees+"deg)";
     looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
     degrees++;
-    if(degrees > 359){
+    if(degrees > 289){
       clearTimeout(looper);
     }
   }
@@ -27,112 +27,108 @@
 
 
   <body>
-    <div class="section">
-      <video autoplay loop muted>
-        <source src="assets/images/joshuatree.mp4" type="video/mp4">
-      </video>
-    </div>
+    <video id="videoBG" autoplay loop muted>
+      <source src="assets/images/joshuatree.mp4" type="video/mp4">
+    </video>
 
     <nav class="navbar">
       <span><i class="fas fa-bars"></i></span>
     </nav>
-
+<div class="biggest-container-ever">
     <div class="split-container">
-
-    <div class="main-container">
-      <div class="ellipse-container">
-        <div class="description-ellipse">
-          <div class="description1">
-            <p>Full Stack Web Developer </p>
-          </div>
-          <div class="description2">
-            <div class="empty-box">
+      <div class="main-container">
+        <div class="ellipse-container">
+          <div class="description-ellipse">
+            <div class="description1">
+              <p>Full Stack Web Developer </p>
             </div>
-            <div class="blah-blah">
-              Kat was raised in southern California where she grew up with deserts,
-              mountains and the Pacific ocean.
-              She has lived in 22 + countries. Currently climbing and eating lots of pizza in Italy. Her art
-              is inspired by her experiences and the elements of her surrounding.
-              It can range from neutrality to eclectic.
+            <div class="description2">
+              <div class="empty-box">
+              </div>
+              <div class="blah-blah">
+                Kat was raised in southern California where she grew up with deserts,
+                mountains and the Pacific ocean.
+                She has lived in 22 + countries. Currently climbing and eating lots of pizza in Italy. Her art
+                is inspired by her experiences and the elements of her surrounding.
+                It can range from neutrality to eclectic.
+              </div>
+            </div>
+            <div class="description3">
+              <a href="https://github.com/katrinarobles" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/katrina-amor-robles-3b45891ba/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+              <a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry"><i class="fas fa-2x fa-envelope"></i></a>
+              <a href="http://www.facebook.com/OntheMatBz" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+              <a href="http://www.instagram.com/a_kat_onthemat" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+              <p style="margin: 2px; font-size: 0.5em; font-family:'Poppins';"> <i class="fas fa-phone"></i>+39 3773436871</p>
+              <small><a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry">Contact me for more projects</small></a>
+            </div>
+          </div> <!-- end div for dsecription-ellipse -->
+          <div class="avatar-ellipse">
+            <div id="ellipse-text">°Katrina Amor Robles°</div>
+            <script>rotateAnimation("ellipse-text",30);</script>
+            <div class="me">
+              <img src="assets/images/flowerpower.png" class="avatar">
+            </div>
+            <div class="branch-div">
+              <img src="assets/images/branch.png" class="branch">
             </div>
           </div>
-          <div class="description3">
-            <a href="https://github.com/katrinarobles" target="_blank" class="hover-this"><i class="fab fa-2x fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/katrina-amor-robles-3b45891ba/" target="_blank" class="hover-this"><i class="fab fa-2x fa-linkedin"></i></a>
-            <a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry" class="hover-this"><i class="fas fa-2x fa-envelope"></i></a>
-            <a href="http://www.facebook.com/OntheMatBz" target="_blank" class="hover-this"><i class="fab fa-2x fa-facebook"></i></a>
-            <a href="http://www.instagram.com/a_kat_onthemat" target="_blank" class="hover-this"><i class="fab fa-2x fa-instagram"></i></a>
-            <p class="hover-this" style="margin: 2px; font-size: 0.5em; font-family:'Poppins';"> <i class="fas fa-phone"></i>+39 3773436871</p>
-            <small><a href="mailto:katrinarobles@live.com?subject=Full%20Stack%20Developer%inquiry" class="hover-this">Contact me for more projects</small></a>
-          </div>
-        </div>
-        <div class="avatar-ellipse">
-          <div id="ellipse-text">°Katrina Amor Robles°</div>
-          <script>rotateAnimation("ellipse-text",30);</script>
-          <div class="me">
-            <img src="assets/images/flowerpower.png" class="avatar">
-          </div>
-          <div class="branch-div">
-            <img src="assets/images/branch.png" class="branch">
-          </div>
-        </div>
-      </div> <!--end div for ellipse-container -->
-    </div> <!--end div for main-container -->
-    <div class="nav-wrapper">
-            <div class="navvs">
-                  <div class="hover-this"><p class="p-stain">Projects</p></div>
-                  <div class="cursor"></div>
-            </div>
+        </div> <!--end div for ellipse-container -->
+      </div> <!--end div for main-container -->
+      <div class="nav-wrapper">
+              <div class="navvs">
+                    <div class="hover-this"><p class="p-stain">Projects</p></div>
+                    <div class="cursor"></div>
+              </div>
       </div>
-    <div class="main-container-2">
 
-      <div class="all-projects">
-
+      <div class="main-container-2">
+        <div class="all-projects">
+          <div class="project">
+            <div class="project__card">
+              <a href="https://www.chooseplana.com" target="_blank" class="project__image"><img src="assets/images/forest-bg.jpg" width=500 height=350 alt="plana"></a>
+              <div class="project__detail">
+                <h2 class="project__title">Plana</h2>
+                <p class="project__category">Job Description:</p>
+                <small class="project__category">Backend & Frontend Developer</small>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__card">
+              <a href="https://bold-like-a-pro.herokuapp.com/" target="_blank" class="project__image"><img src="assets/images/bold.jpg" width=500 height=350 alt="bold"></a>
+              <div class="project__detail">
+                <h2 class="project__title" style="font-family: 'Yellowtail', cursive; color: white;">Bold</h2>
+                <p class="project__category">Job Description:</p>
+                <small class="project__category">Backend & Frontend Developer</small>
+              </div>
+            </div>
+        </div>
         <div class="project">
-          <div class="project__card">
-            <a href="https://www.chooseplana.com" target="_blank" class="project__image"><img src="assets/images/forest-bg.jpg" width=500 height=350 alt="plana"></a>
-            <div class="project__detail">
-              <h2 class="project__title">Plana</h2>
-              <p class="project__category">Job Description:</p>
-              <small class="project__category">Backend & Frontend Developer</small>
+            <div class="project__card">
+              <a href="https://katrinaamorrobles.wordpress.com/gallery/" target="_blank" class="project__image"><img src="assets/images/ashleyprouty.jpg" width=500 height=350 alt="AP"></a>
+              <div class="project__detail">
+                <h2 class="project__title" style="color: white;">Photography</h2>
+                <p class="project__category">Job Description:</p>
+                <small class="project__category">Lifestyle Photographer</small>
+              </div>
             </div>
-          </div>
         </div>
-        <div class="project">
-          <div class="project__card">
-            <a href="https://bold-like-a-pro.herokuapp.com/" target="_blank" class="project__image"><img src="assets/images/bold.jpg" width=500 height=350 alt="bold"></a>
-            <div class="project__detail">
-              <h2 class="project__title" style="font-family: 'Yellowtail', cursive; color: white;">Bold</h2>
-              <p class="project__category">Job Description:</p>
-              <small class="project__category">Backend & Frontend Developer</small>
-            </div>
-          </div>
-      </div>
-      <div class="project">
-          <div class="project__card">
-            <a href="https://katrinaamorrobles.wordpress.com/gallery/" target="_blank" class="project__image"><img src="assets/images/ashleyprouty.jpg" width=500 height=350 alt="AP"></a>
-            <div class="project__detail">
-              <h2 class="project__title" style="color: white;">Photography</h2>
-              <p class="project__category">Job Description:</p>
-              <small class="project__category">Lifestyle Photographer</small>
-            </div>
-          </div>
-      </div>
-    </div>
+      </div> <!-- end div for all-projects -->
     </div> <!--end div for main-container-2-->
   </div> <!--end div for split-container -->
 
-    <div class="second-container">
-      <div class="skills-container">
-        <div class="title-skills">
-          S
-          <br>K
-          <br>I
-          <br>L
-          <br>L
-          <br>S
-        </div>
-        <div class="wrapper">
+  <div class="second-container">
+    <div class="skills-container">
+      <div class="title-skills">
+        S
+        <br>K
+        <br>I
+        <br>L
+        <br>L
+        <br>S
+      </div>
+      <div class="wrapper">
           <svg viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
               <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
@@ -140,34 +136,35 @@
               <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
             </g>
           </svg>
-        </div>
-        <div class="skills-box">
-          <div id="pewpew" class="flexy-container">
-            <img src="assets/images/mouse.png" class="mouse-scroll" id="customPointer" width="30" style="position:absolute;" />
-            <div class="skills">
-              <p class="needtofixthis">spaces</p>
-            </div>
-            <div class="skills">
-              <p><i class="far fa-dot-circle"></i> Ruby on Rails</p>
-              <p><i class="far fa-dot-circle"></i> Javascript</p>
-              <p><i class="far fa-dot-circle"></i> SQL</p>
-            </div>
-            <div class="skills">
-              <p><i class="far fa-dot-circle"></i> HTML</p>
-              <p><i class="far fa-dot-circle"></i> CSS</p>
-              <p><i class="far fa-dot-circle"></i> Bootstrap</p>
-            </div>
-            <div class="skills">
-              <p><i class="far fa-dot-circle"></i> Jquery</p>
-              <p><i class="far fa-dot-circle"></i> Git</p>
-              <p><i class="far fa-dot-circle"></i> GitHub</p>
-              <p><i class="far fa-dot-circle"></i> Heroku</p>
-              <p><i class="far fa-dot-circle"></i> Photoshop</p>
-            </div>
+      </div>
+      <div class="skills-box">
+        <div id="pewpew" class="flexy-container">
+          <img src="assets/images/mouse.png" class="mouse-scroll" id="customPointer" width="30" style="position:absolute;" />
+          <div class="skills">
+            <p class="needtofixthis">spaces</p>
+          </div>
+          <div class="skills">
+            <p><i class="far fa-dot-circle"></i> Ruby on Rails</p>
+            <p><i class="far fa-dot-circle"></i> Javascript</p>
+            <p><i class="far fa-dot-circle"></i> SQL</p>
+          </div>
+          <div class="skills">
+            <p><i class="far fa-dot-circle"></i> HTML</p>
+            <p><i class="far fa-dot-circle"></i> CSS</p>
+            <p><i class="far fa-dot-circle"></i> Bootstrap</p>
+          </div>
+          <div class="skills">
+            <p><i class="far fa-dot-circle"></i> Jquery</p>
+            <p><i class="far fa-dot-circle"></i> Git</p>
+            <p><i class="far fa-dot-circle"></i> GitHub</p>
+            <p><i class="far fa-dot-circle"></i> Heroku</p>
+            <p><i class="far fa-dot-circle"></i> Photoshop</p>
+          </div>
         </div>
       </div>
     </div>
-
+  </div>
+</div>
     <div class="footer">
       <p>Video Creds: <a href="https://vimeo.com/101617534" target="_blank" class="mark">Mark 'Indy' Kochte</a></p>
     </div>
