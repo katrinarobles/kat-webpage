@@ -72,7 +72,7 @@ background-size: 100%;
 #container2{
     width: 99%;
     height: 99%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 
