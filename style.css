@@ -36,6 +36,7 @@ background-size: 100%;
         width:100%;
         height: 100vh;
     }
+
 }
 
 @media (max-aspect-ratio: 16/9) {
@@ -90,16 +91,16 @@ background-size: 100%;
 .description-ellipse {
   background-color: #3A2E3C;
   opacity: 0.8;
-  width: 70%;
+  width: 75%;
   height: 300px;
   position: absolute;
-  left: 128px;
+  left: 105px;
   border-radius: 3%;
   text-align: center;
   color: #F2ECE1;
   padding-top: 10px;
-  padding-left: 40px;
-  padding-right: 30px;
+  padding-left: 14px;
+  padding-right: 24px;
   padding-bottom: 20px;
   overflow: scroll;
 }
@@ -186,7 +187,7 @@ background-size: 100%;
     width: 100%;
     background: transparent;
     position: absolute;
-    top: 15%;
+    top: 10%;
     margin: 0 auto;
     left: 30%;
 }
@@ -236,7 +237,6 @@ background-size: 100%;
 
 @media(max-width: 576px) {
       .nav-wrapper {
-            top: 1%;
             left: 183%;
       }
 
@@ -245,6 +245,11 @@ background-size: 100%;
             padding: 10px 0;
             display: inline-block;
       }
+}
+@media (max-aspect-ratio: 16/9) {
+        .nav-wrapper {
+        top: 5%;
+    }
 }
 
 
@@ -398,6 +403,19 @@ background-size: 100%;
       .all-projects {
         width: 300%;
       }
+      .description-ellipse {
+      height: 350px;
+      position: absolute;
+      left: 99px;
+      border-radius: 3%;
+      text-align: center;
+      color: #F2ECE1;
+      padding-top: 10px;
+      padding-left: 37px;
+      padding-right: 24px;
+      padding-bottom: 20px;
+      overflow: scroll;
+      }
 }
 
 .skills-container {
@@ -408,7 +426,7 @@ background-size: 100%;
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
-  width: 350px;
+  width: 50%;
 }
 .title-skills {
   text-align: center;
@@ -471,11 +489,16 @@ div svg:hover .arrow-fixed {
 .flexy-container {
   display: flex;
   justify-content: space-between;
-  height: 90px;
+  height: 45%;
   overflow: scroll;
   cursor: none;
+  padding-right: 10px;
 }
-
+.skills {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100%;
+}
 .mouse-scroll {
  display: none;
 }
@@ -493,11 +516,11 @@ div svg:hover .arrow-fixed {
   }
 }
 
-.footer {
+/*.footer {
   text-align: center;
   font-size: 0.8em;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
   width: 100%;
-}
+}*/
