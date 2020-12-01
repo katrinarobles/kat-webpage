@@ -31,7 +31,7 @@ background-size: 100%;
 
 }
 
-@media (min-aspect-ratio: 16/9) {
+/*@media (min-aspect-ratio: 16/9) {
     #videoBG {
         width:100%;
         height: 100vh;
@@ -46,11 +46,10 @@ background-size: 100%;
     }
 }
 
-
 .biggest-container-ever {
     margin: 10% auto;
 }
-
+*/
 @media (max-width: 576px) {
   .biggest-container-ever {
     width: 300%;
@@ -60,27 +59,41 @@ background-size: 100%;
         height: 100vh;
     }
 }
+
+
 .navbar {
   background-color: transparent;
   transition: 0.5s background-color ease;
   border-bottom: 1px solid;
-/*  border-color: #F2ECE1;*/
+  margin-bottom: 12%;
   padding: 10px;
-  margin-bottom: 100px;
   text-align: right;
   color: transparent;
 }
 
+
+
+
+#container1{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#container2{
+    width: 99%;
+    height: 99%;
+    overflow: auto;
+}
+
+
 .split-container {
   display: flex;
-  justify-content: space-between;
+  height: 500px;
+  margin-top: -5%;
 }
 
 .main-container {
-  margin-bottom: 130px;
-  margin-left: 30px;
-  margin-right: 10px;
-  width: 110%;
 }
 
 .ellipse-container {
@@ -88,11 +101,10 @@ background-size: 100%;
   position: relative;
   align-items: center;
 }
+
 .description-ellipse {
   background-color: #3A2E3C;
   opacity: 0.8;
-  width: 75%;
-  height: 300px;
   position: absolute;
   left: 105px;
   border-radius: 3%;
@@ -102,7 +114,6 @@ background-size: 100%;
   padding-left: 14px;
   padding-right: 24px;
   padding-bottom: 20px;
-  overflow: scroll;
 }
 
 .description1 p {
@@ -184,12 +195,11 @@ background-size: 100%;
 
 
 .nav-wrapper {
-    width: 100%;
     background: transparent;
     position: absolute;
     top: 10%;
     margin: 0 auto;
-    left: 30%;
+    left: 66%;
 }
 
 .navvs {
@@ -237,7 +247,8 @@ background-size: 100%;
 
 @media(max-width: 576px) {
       .nav-wrapper {
-            left: 183%;
+            top: 5%;
+          left: 183%;
       }
 
       .hover-this {
@@ -270,8 +281,7 @@ background-size: 100%;
 
 
 .project {
-  width: 100%;
-  width: 45%;
+  width: 80%;
 /*  float: left;*/
 /*  margin-right: 5%;*/
   border-radius: 10px;
@@ -417,7 +427,21 @@ background-size: 100%;
       overflow: scroll;
       }
 }
+@media (max-aspect-ratio: 16/9) {
+    .all-projects {
+    display: block;
+    width: 100%;
+    height: 403px;
+    align-content: center;
+    overflow: scroll;
+  }
+    .project {
+      margin: 2%;
+    }
+}
 
+.second-container {
+}
 .skills-container {
   display: flex;
 }
@@ -426,7 +450,7 @@ background-size: 100%;
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
-  width: 50%;
+  width: 40%;
 }
 .title-skills {
   text-align: center;
