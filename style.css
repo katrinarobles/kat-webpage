@@ -139,6 +139,7 @@ background-size: 100%;
 
 .avatar-ellipse {
   position: relative;
+  z-index: 500;
 }
 
 .me {
