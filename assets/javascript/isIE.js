@@ -9,5 +9,6 @@ function isIE() {
 /* Create an alert to show if the browser is IE or not */
 if (isIE()){
     alert('This website is most compatible with Chrome, FireFox, Safari, or Edge. Please download Edge.');
+    window.location.replace("https://www.microsoft.com/en-us/edge")
 }else{
 }

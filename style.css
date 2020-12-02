@@ -142,6 +142,7 @@ background-size: 100%;
 .description3 {
   text-align: center;
   margin-top: 3%;
+  margin-left: 25%;
 }
 .description3 i {
   margin: 2px;
@@ -562,10 +563,14 @@ div svg:hover .arrow-fixed {
     padding-bottom: 20px;
     overflow: scroll;
     left: 0;
-    }
-    .empty-box {
+  }
+  .empty-box {
     padding-right: 0;
-}
+  }
+  .description3 {
+    margin-left: 0;
+  }
+
 }
 
 /*.footer {
