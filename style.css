@@ -557,12 +557,16 @@ div svg:hover .arrow-fixed {
     position: relative;
     align-items: center;
   }
-  .second-container {
-    margin-top: 140%;
+  .main-container-2 {
+    margin-left: 0;
+    margin-right: 0;
   }
   .nav-wrapper {
     left: 0;
     position: relative;
+  }
+  .second-container {
+    margin-top: 140%;
   }
   .title-skills {
     margin-left: 0;
@@ -607,7 +611,7 @@ div svg:hover .arrow-fixed {
 
 @media (max-aspect-ratio: 16/9) {
         .nav-wrapper {
-        top: 5%;
+        top: 0;
     }
 }
 
