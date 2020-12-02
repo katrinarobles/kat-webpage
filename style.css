@@ -5,9 +5,8 @@ html {
 }
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
-background: transparent;*/   Optional: just make scrollbar invisible
+background: transparent;
 }
- Optional: show position indicator in red
 ::-webkit-scrollbar-thumb {
     background: #F2ECE1;
 }
