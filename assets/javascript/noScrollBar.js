@@ -1,3 +1,4 @@
-var parent = document.getElementById('container1');
-var child = document.getElementById('container2');
-child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
+var parents = document.querySelectorAll('#container1');
+var children = document.querySelectorAll('#container2');
+
+children.forEach(child => { child.style.paddingRight = child.offsetWidth - child.clientWidth + "px"; });
