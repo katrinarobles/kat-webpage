@@ -1,4 +1,4 @@
-(function bubbleHover () {
+function bubbleHover () {
 
       const link = document.querySelectorAll('.navvs > .hover-this');
       const cursor = document.querySelector('.cursor');
@@ -27,4 +27,4 @@
       link.forEach(b => b.addEventListener('mouseleave', animateit));
       window.addEventListener('mousemove', editCursor);
 
-})();
+};

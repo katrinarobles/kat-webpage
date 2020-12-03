@@ -1,33 +1,21 @@
 {
-  "name": "kat-webpage",
+  "name": "KatrinaRoblesPage",
   "version": "1.0.0",
-  "description": "trying out first website",
+  "description": "my homepage",
   "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^3.4.1",
-    "jquery": "^3.5.1",
-    "jquery-touchswipe": "^1.6.19"
-  },
+  "repository": "git@github.com:katrinarobles/katrinarobles.git",
+  "author": "Katrina Robles <katrinarobles@live.com>",
+  "license": "MIT",
   "devDependencies": {
-    "@webpack-cli/serve": "^1.1.0",
     "eslint": "^7.14.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "serve": "webpack serve",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "git+https://github.com/katrinarobles/kat-webpage.git",
-  "author": "katrinarobles",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/katrinarobles/kat-webpage/issues"
-  },
-  "homepage": "https://github.com/katrinarobles/kat-webpage#readme"
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

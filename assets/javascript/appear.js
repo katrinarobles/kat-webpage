@@ -3,15 +3,14 @@
 // });
 
 function appear(event) {
-var skills = document.querySelector(".skills-box");
-  if (skills.style.display === "block") {
-    skills.style.display = "none";
-  } else {
-    skills.style.display = "block";
-  }
-}
+  let skills = document.querySelector(".skills-box");
+    if (skills.style.display === "block") {
+      skills.style.display = "none";
+    } else {
+      skills.style.display = "block";
+    }
+  };
 // var skills = document.querySelector(".skills-box");
-
 
 document.querySelector(".wrapper").addEventListener("click", appear);
 
