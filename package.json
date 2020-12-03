@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Katrina Robles Web Developer page",
   "main": "index.js",
-  "repository": "git@github.com:katrinarobles/katrinarobles.git",
+  "repository": "git@github.com:katrinarobles/kat-webpage.git",
   "author": "Katrina Robles <katrinarobles@live.com>",
   "license": "MIT",
   "devDependencies": {
