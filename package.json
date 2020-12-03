@@ -1,0 +1,15 @@
+{
+  "name": "katrinaroblespage",
+  "version": "1.0.0",
+  "description": "Katrina Robles Web Developer page",
+  "main": "index.js",
+  "repository": "git@github.com:katrinarobles/katrinarobles.git",
+  "author": "Katrina Robles <katrinarobles@live.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@webpack-cli/serve": "^1.1.0",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
