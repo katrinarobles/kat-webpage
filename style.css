@@ -18,6 +18,10 @@ body {
   color: #F2ECE1;
   cursor: none;
 }
+
+.biggest-container-ever {
+  margin: 7% auto;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -44,37 +48,6 @@ background-size: 100%;
 
 }
 
-/*@media (min-aspect-ratio: 16/9) {
-    #videoBG {
-        width:100%;
-        height: 100vh;
-    }
-
-}
-
-@media (max-aspect-ratio: 16/9) {
-    #videoBG {
-        width:auto;
-        height: 100%;
-    }
-}
-
-.biggest-container-ever {
-    margin: 10% auto;
-}
-*/
-
-
-.navbar {
-  background-color: transparent;
-  transition: 0.5s background-color ease;
-  border-bottom: 1px solid;
-  margin-bottom: 12%;
-  padding: 10px;
-  text-align: right;
-  color: transparent;
-}
-
 
 #container1{
     height: 100%;
@@ -84,7 +57,7 @@ background-size: 100%;
 
 #container2{
     width: 90%;
-    height: 90%;
+    height: 80%;
     overflow: auto;
 }
 
@@ -92,7 +65,7 @@ background-size: 100%;
 .split-container {
   display: flex;
   height: 500px;
-  margin-top: -4%;
+  margin-top: -3%;
 }
 
 .main-container {
@@ -199,10 +172,7 @@ background-size: 100%;
 
 .nav-wrapper {
     background: transparent;
-    position: absolute;
-    top: 10%;
-    margin: 0 auto;
-    left: 66%;
+    position: relative;
 }
 
 .navvs {
