@@ -256,8 +256,6 @@ background-size: 100%;
 .main-container-2 {
   position: relative;
   width: 100%;
-  margin-left: 4%;
-  margin-right: 4%;
   cursor: pointer;
 }
 
@@ -418,7 +416,8 @@ background-size: 100%;
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
-  width: 40%;
+  width: 50%;
+  border-top: solid 0.3px;
 }
 .title-skills {
   text-align: center;
@@ -484,14 +483,15 @@ div svg:hover .arrow-fixed {
 .flexy-container {
   display: flex;
   justify-content: space-between;
-  height: 45%;
+  height: 50%;
   overflow: scroll;
   cursor: none;
-  padding-right: 10px;
+  padding-right: 2%;
+  border-bottom: solid 0.3px;
 }
 .skills {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 2%;
+  margin-left: 2%;
   width: 100%;
 }
 .mouse-scroll {
@@ -528,12 +528,11 @@ div svg:hover .arrow-fixed {
     align-items: center;
   }
   .main-container-2 {
-    margin-left: 0;
-    margin-right: 0;
   }
   .nav-wrapper {
     left: 0;
     position: relative;
+    margin-bottom: 2%;
   }
   .second-container {
     margin-top: 140%;
@@ -542,7 +541,7 @@ div svg:hover .arrow-fixed {
     margin-left: 0;
   }
   .skills-box {
-    width: 100%;
+ /*   width: 100%;*/
   }
   .description-ellipse {
     height: 350px;
